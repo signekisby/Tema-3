@@ -1,0 +1,177 @@
+body{
+    background: rgb(44, 21, 13);
+    margin: 0;
+    padding: 0;
+}
+
+/* OBS!! ALLE UNDERSIDER MED EVENTS ER LINKET TIL DENNE */
+
+/* Burger menu */
+
+.menuC{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 160px;
+    background-color: #ece6bc;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 1000;
+    margin-bottom: 200px;
+}
+
+.menuC img{
+    width: 110px;
+    height: auto;
+    margin-left: 30px;
+}
+
+.menu-btn{
+    font-size: 40px;
+    cursor: pointer;
+    user-select: none;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    color: black;
+}
+
+.menu{
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+    position: fixed;
+    right: 10px;
+    top: 55px;
+}
+
+.menu a{
+    color: #ece6bc;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+    transition: background 0.3s;
+    font-family: "Apple Chancery";
+}
+
+.menu a:hover{
+    background-color: #555;
+}
+
+/* Header */
+
+.menuC h1{
+    font-size: 80px;
+    font-family: "Apple Chancery";
+    font-weight: bolder;
+    align-items: center;
+}
+
+/* Overskrift */
+
+h2{
+    font-size: xxx-large;
+    font-family: "Apple Chancery";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+    color: #3183b3;
+}
+
+
+/* Footer */
+
+footer{
+    margin-bottom: 0;
+    margin-top: 300px;
+    width: 100%;
+    height: 250px;
+    background-color: #ece6bc;
+    box-sizing: border-box;
+    flex-direction: column;
+    flex: 1;
+}
+
+.footer-indhold{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left h6{
+    margin: 0 0 5px 30px;
+    font-size: 24px;
+}
+
+.footer-left p{
+    margin: 5px 30px;
+    font-size: 16px;
+}
+
+.kontakt{
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+    margin-left: 30px;
+}
+
+.kontakt:hover{
+    color: #3183b3
+}
+
+.some{
+    margin-top: 10px;
+}
+
+.some a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+    margin-left: 30px;
+}
+
+.some a:hover{
+    color: #3183b3;
+}
+
+.footer-right img{
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.footer-bottom{
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    margin-top: 15px;
+    padding-top: 10px;
+}
+
+@media (max-width: 600px){
+    .footer-indhold{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-right{
+        margin-top: 15px;
+    }
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 8px;
+    filter: brightness(90%);
+    transition: filter 0.3s;
+}
+
+.icon:hover {
+    filter: brightness(120%);
+}
